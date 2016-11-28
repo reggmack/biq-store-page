@@ -87,7 +87,8 @@ img {
 }
 
 
-
+font-size: 1.1em;
+    padding-bottom: 10px;
 
 .invoice {
     
@@ -95,17 +96,28 @@ img {
 .invoice i {
    font-size: 1.2em;
 }
+.invoice i.adust-i {
+    padding-bottom: 9px;
+}
 .invoice-wrap {
     border-bottom: 3px solid gainsboro;
+    margin-bottom: .25em;
 }
 
 [class*="hdr-invoice-"] {
     font-weight: 500;
+    font-style: italic;
 }
 
 .hdr-label-field {
     margin: 0 0 .25em;
 }
+
+.hdr-cp-label-field {
+    margin: 0 0 .25em;
+    flex: 1 100%;
+}
+
 
 
 .hdr-invoice-cp p,
@@ -134,6 +146,7 @@ img {
     font-size: .7em;
     line-height: 1.25;
     margin: 0 1.5em .35em 0;
+    color: #8a8a8a;
 }
 .invoice-item-qty {
     font-size: .75em;
@@ -150,6 +163,7 @@ img {
 .invoice-item-options {
     border-left: 1px dotted gainsboro;
     padding-left: .5em;
+    align-items: center;
 }
 .invoice-edit-item {
     
@@ -158,9 +172,30 @@ img {
     
 }
 .ship-where-text {
-    margin:.5em .5em 0 0;
-    font-size: .65em;
+    margin: 0 .5em 0 0;
+    font-size: .55em;
+    color: deepskyblue;
 }
+.invoice-totals {
+    font-size: .9em;
+    margin: 0 0 .5em 0;
+    border-top: 1.5px solid rgba(65, 173, 73, 0.5);
+    border-bottom: 1.5px solid rgba(65, 173, 73, 0.5);
+    padding: .25em 1px;
+    background-color: rgba(65, 173, 73, 0.1);
+}
+.invoice-total-shipping,
+.invoice-sub-total {
+    font-size: .85em;
+    font-weight: 300;
+    color: #8a8a8a;
+}
+
+.invoice-grand-total {
+    font-size: .95em;
+    font-weight: 700;
+}
+
 
 /* ---- Input Elements ---- */
 
@@ -194,7 +229,7 @@ input#ship-zip {
     border-style: solid;
     border-width: 1px;
     border-color: #999;
-    margin-bottom: .5em;
+    margin: 0 .5em .5em 0;
 }
 
 div.item-qty label {
@@ -203,6 +238,11 @@ div.item-qty label {
     margin-bottom: 0;
     line-height: 14px;
     font-weight: 500;
+}
+
+.ship-detail-label {
+    font-size:.7em;
+    font-weight: 700;
 }
 
 .item-qty {
@@ -232,6 +272,22 @@ div.item-qty label {
 	border-radius: 5px;
 	width:210px;
 }
+
+.btn-green-plain {
+	background-color: rgba(65, 173, 73, 0.5); /* Green */
+	border: none;
+	color: white;
+	padding: 7px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+
 
 .btn-blue {
 	background-color: rgba(0, 130, 202, 0.5); /* Blue */

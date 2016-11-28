@@ -4,9 +4,12 @@
   Flexbox
 ==================================== */
 
-.products,
+.products {
+    flex: 1 450px;
+    /*flex-basis: 100px;*/
+}
 .invoice {
-    flex: 1 580px;
+    flex: 1 600px;
     /*flex-basis: 100px;*/
 }
 
@@ -17,12 +20,22 @@
 .invoice-wrap,
 .invoice-item-options,
 .invoice-shipping,
-.ship-inputs {
+.ship-inputs,
+.invoice-ship-totals,
+.invoice-totals,
+.ship-details {
     display: flex;
     flex-wrap: wrap;
     /*align-items: center;*/
     /*justify-content: space-between;*/
     /*flex-direction: column-reverse;*/
+}
+.ship-details {
+    justify-content: center;
+    align-items: center;
+}
+.invoice-totals{
+    justify-content:space-around;
 }
 
 .item-content,
@@ -31,6 +44,27 @@
     flex: 1;
 }
 
+.invoice-item-options,
+.ship-where-text {
+    align-self: center;
+}
+
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex: 1 100%;
+    
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.ship-detail-label {
+    flex:0 220px;
+}
+.ship-detail-inputs {
+    margin-left: auto;
+}
 
 
 
@@ -45,11 +79,17 @@
 }*/
     
 @media (min-width: 400px) {
-	.hdr-label-field:first-child {
-        flex:1 100%;
+    .invoice-total-shipping {
+        order: 1;
     }
 }
 
+@media (min-width: 474px) {
+    .center-ship-form {
+    align-content: center;
+        width: 400px;
+    }
+}
 
 @media (min-width: 768px) {
 	.item-content {
@@ -58,6 +98,10 @@
     }
     .item-m {
         flex: 0 30%;
+    }
+    
+    input#ship-zip {
+        width: 120px;
     }
         
 /*    .hdr-label-field:first-child {
