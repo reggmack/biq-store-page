@@ -1,0 +1,57 @@
+/* CSS Document */
+
+.item-group {
+    margin: 0 0 .5em;
+    max-width: 40em;
+    width: 100%;
+    padding-bottom: .75em;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+}
+
+.item input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+
+.item label {
+    color: #3a3a3a;
+    display: block;
+    line-height: 1.25;
+    font-weight: bold;
+    padding: 0 0 .35em.5em;
+    margin-bottom: .5em;
+    transition: all .55s;
+    border-bottom: 1px dotted gainsboro;
+    cursor: pointer;
+}
+
+.item input:focus + label,
+.item label:hover {
+    /*background: #85d8ce;*/
+    letter-spacing: 1px;
+    color: deepskyblue;
+}
+
+.item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+.item-content p {
+    margin: .5em 0;
+    color: inherit;
+}
+
+.item input:checked ~ .item-content {
+    max-height: 50.25em;
+    border-bottom: 4px solid gainsboro;
+}
+
+

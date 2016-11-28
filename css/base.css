@@ -1,0 +1,270 @@
+/* CSS Document */
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+    font-size: 1.35em;
+	background: #e8e9e9;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .7em;
+    line-height: 1.4em;
+	margin: 0 0 1em 0;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin: 0 0 .8em 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+    padding: 7.5px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 45px auto;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+
+.products,
+.invoice {
+	padding: 15px;
+	margin: 5px;	
+	/*background: #3db5da;*/
+	border-radius: 3px;
+    border: 1px solid #e5e5e5;
+}
+
+/* ---- Page Elements ---- */
+
+.item-pdf {
+    margin-bottom: .15em;
+}
+
+.item-print {
+   margin: 0 7px .3em 0;
+}
+
+.item-action {
+    padding-bottom: .5em;
+}
+
+
+
+
+.invoice {
+    
+}
+.invoice i {
+   font-size: 1.2em;
+}
+.invoice-wrap {
+    border-bottom: 3px solid gainsboro;
+}
+
+[class*="hdr-invoice-"] {
+    font-weight: 500;
+}
+
+.hdr-label-field {
+    margin: 0 0 .25em;
+}
+
+
+.hdr-invoice-cp p,
+.hdr-invoice-item-title p,
+.hdr-invoice-item-qty p,
+.hdr-invoice-cost-each-item p,
+.hdr-invoice-total p {
+    margin:0;
+    font-size: .65em;
+}
+
+
+
+.invoice-cp {
+    
+}
+.invoice-cp h2 {
+    font-size: .85em;
+    line-height: 1.25;
+    margin: 0 .75em 0 0;
+    border-bottom: 1px dotted gainsboro;
+    padding-bottom: .25em;
+    color: deepskyblue;
+}
+.invoice-item-title {
+    font-size: .7em;
+    line-height: 1.25;
+    margin: 0 1.5em .35em 0;
+}
+.invoice-item-qty {
+    font-size: .75em;
+    margin-right: 1em;
+}
+.invoice-cost-each-item {
+    font-size: .75em;
+    margin-right: 1em;
+}
+.invoice-total {
+    font-size: .75em;
+    margin-right: 1em;
+}
+.invoice-item-options {
+    border-left: 1px dotted gainsboro;
+    padding-left: .5em;
+}
+.invoice-edit-item {
+    
+}
+.invoice-delete-item {
+    
+}
+.ship-where-text {
+    margin:.5em .5em 0 0;
+    font-size: .65em;
+}
+
+/* ---- Input Elements ---- */
+
+input#cp-list {
+	height:28px;
+	padding: 2px 5px 0 10px;
+	width:210px;
+	border-radius:5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999;
+    margin-bottom: .5em;
+}
+
+input#ship-cp-list {
+	height:28px;
+	padding: 2px 5px 0 10px;
+	width:180px;
+	border-radius:5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999;
+    margin: 0 .5em .5em 0;
+}
+
+input#ship-zip {
+    height: 28px;
+    padding: 2px 5px 0 10px;
+    width: 180px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+    margin-bottom: .5em;
+}
+
+div.item-qty label {
+    font-size: .7em;
+    border: none;
+    margin-bottom: 0;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.item-qty {
+    width: 45px;
+}
+
+#product-qty {
+    width: 45px;
+    height: 28px;
+    padding-left: 3px;
+}
+
+/* ---- Button Elements ---- */
+
+.btn-green {
+	background-color: rgba(65, 173, 73, 0.5); /* Green */
+	border: none;
+	color: white;
+	padding: 7px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	width:210px;
+}
+
+.btn-blue {
+	background-color: rgba(0, 130, 202, 0.5); /* Blue */
+	border: none;
+	color: white;
+	padding: 7px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	width:210px;
+	height:50px;
+}
+
+.btn-reflex {
+	background-color: #002878; /* Reflex */
+	border: none;
+	color: white;
+	padding: 7px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	width:210px;
+}
+
+
+

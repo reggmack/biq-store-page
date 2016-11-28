@@ -1,0 +1,90 @@
+/* CSS Document */
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.products,
+.invoice {
+    flex: 1 580px;
+    /*flex-basis: 100px;*/
+}
+
+.container,
+.item-content,
+.item-qty-wrap,
+.item-action,
+.invoice-wrap,
+.invoice-item-options,
+.invoice-shipping,
+.ship-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: column-reverse;*/
+}
+
+.item-content,
+.item-action {
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*@media (min-width: 200px) and (max-width: 344px) {
+    .item-qty-wrap {
+        justify-content: center;
+    }
+}*/
+    
+@media (min-width: 400px) {
+	.hdr-label-field:first-child {
+        flex:1 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+	.item-content {
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+    .item-m {
+        flex: 0 30%;
+    }
+        
+/*    .hdr-label-field:first-child {
+        flex:1 100%;
+    }*/
+}
+
+@media (min-width: 1024px) {
+	
+}
+
+
+
+
+/* ================================= 
+  Centering in Flexbox
+==================================== */
+
+/*.container {
+	display: flex;
+	min-height: 50vh;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    align-self: center
+}*/
+

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BIQ Store</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/flex.css"/>
+<link rel="stylesheet" href="css/accordion.css"/>
+<script src="https://use.fontawesome.com/07e69f6e92.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="products">
+   
+<div class="item-group">
+    <div class="item">
+        <input id="item-one" type="radio" name="items">
+        <label for="item-one">SME Series - Building A Culture of Health Booklet</label>
+        <div class="item-content">
+            <div class="item-m"><img src="img/thumb10steps.jpg" alt=""/></div>
+            <div class="item-action">
+                <div class="item-desc"><p>This publication offers management teams contemplating a population health initiative insight into the common characteristics of successful population-health management programs.</p></div>
+                <div class="item-choose-cp">
+                    <form action="">
+                        <input id="cp-list" list="browsers" placeholder="Choose Channel Partner">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist> 
+                        </form>
+                </div>
+                <div class="item-pdf"><button class="btn-blue" type="button" href="#">Download PDF</button></div>
+                <div class="item-qty-wrap">
+                    <div class="item-print"><button class="btn-green" type="button" href="#">Order Print Material</button></div>
+                    <div class="item-qty"><label for="product-qty">Qty.</label><input type="number" id="product-qty" value="50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end item-->
+
+<div class="item-group">
+    <div class="item">
+        <input id="item-two" type="radio" name="items">
+        <label for="item-two">SME Series - Building A Culture of Health Booklet</label>
+        <div class="item-content">
+            <div class="item-m"><img src="img/thumb10steps.jpg" alt=""/></div>
+            <div class="item-action">
+                <div class="item-desc"><p>This publication offers management teams contemplating a population health initiative insight into the common characteristics of successful population-health management programs.</p></div>
+                <div class="item-choose-cp">
+                    <form action="">
+                        <input id="cp-list" list="browsers" placeholder="Choose Channel Partner">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist> 
+                        </form>
+                </div>
+                <div class="item-pdf"><button class="btn-blue" type="button" href="#">Download PDF</button></div>
+                <div class="item-qty-wrap">
+                    <div class="item-print"><button class="btn-green" type="button" href="#">Order Print Material</button></div>
+                    <div class="item-qty"><label for="product-qty">Qty.</label><input type="number" id="product-qty" value="50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end item-->
+		
+</div><!--end products-->
+		
+		
+<div class="invoice">
+    <div class="invoice-wrap">
+        <div class="hdr-label-field">
+            <div class="hdr-invoice-cp"><p>Channel Partner</p></div>
+            <div class="invoice-cp"><h2>SwedishAmerican plus Sister Company</h2></div>
+        </div>
+        <div class="hdr-label-field">
+            <div class="hdr-invoice-item-title"><p>Title</p></div>
+            <div class="invoice-item-title">SME Series - Building A Culture of Health Booklet</div>
+        </div>
+        <div class="hdr-label-field">
+            <div class="hdr-invoice-item-qty"><p>Qty.</p></div>
+            <div class="invoice-item-qty">1000</div>
+        </div>
+        <div class="hdr-label-field">
+            <div class="hdr-invoice-cost-each-item"><p>Each</p></div>
+            <div class="invoice-cost-each-item">3.00</div>
+        </div>
+        <div class="hdr-label-field">
+            <div class="hdr-invoice-total"><p>Total</p></div>
+            <div class="invoice-total">3000.00</div>
+        </div>
+        
+        <div class="invoice-item-options">
+            <div class="invoice-edit-item"><i style="margin-right: .2em;" class="fa fa-pencil-square-o" ></i></div>
+            <div class="invoice-delete-item"><i class="fa fa-trash"></i></div>
+        </div>
+    </div>
+    
+       <div class="invoice-shipping">
+       <p class="ship-where-text">Where's this shipping?</p>
+       <div class="ship-inputs">
+           <div class="item-choose-cp">
+               <form action="">
+                   <input id="ship-cp-list" list="browsers" placeholder="Choose Channel Partner">
+                   <datalist id="browsers">
+                       <option value="Internet Explorer">
+                           <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist> 
+                   </form>
+           </div>
+           
+           <div class="ship-zip"><input type="text" id="ship-zip" placeholder="Postal Zip Code"></div>
+       </div>
+       </div>
+</div>
+
+</div>
+</body>
+</html>
+
