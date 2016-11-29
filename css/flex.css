@@ -60,7 +60,7 @@ div.row {
 }
 
 .ship-detail-label {
-    flex:0 220px;
+    flex:0 180px;
 }
 .ship-detail-inputs {
     margin-left: auto;
@@ -82,7 +82,20 @@ div.row {
     .invoice-total-shipping {
         order: 1;
     }
+    
+/*    .ship-detail-label {
+    text-align: right;
+    padding-right: 1em;
+}*/
 }
+
+@media (min-width: 560px) { 
+    .ship-detail-label {
+    text-align: right;
+    padding-right: 1em;
+}
+}
+
 
 @media (min-width: 474px) {
     .center-ship-form {
