@@ -1,7 +1,7 @@
 /* CSS Document */
 
 .item-group {
-    margin: 0 0 .5em;
+    margin: 0;
     max-width: 40em;
     width: 100%;
     padding-bottom: .75em;
@@ -25,7 +25,7 @@
     line-height: 1.25;
     font-weight: bold;
     padding: 0 0 .35em.5em;
-    margin-bottom: .5em;
+    margin-bottom: .25em;
     transition: all .55s;
     border-bottom: 1px dotted gainsboro;
     cursor: pointer;
@@ -35,13 +35,15 @@
 .item label:hover {
     /*background: #85d8ce;*/
     letter-spacing: 1px;
-    color: deepskyblue;
+    color: rgba(0,191,255,.5);
+    
 }
 
 .item-content {
     max-height: 0;
     overflow: hidden;
-    transition: all .35s;
+    transition: all .7s;
+    transition-timing-function:cubic-bezier(.28,.07,.53,1.18);
 }
 
 .item-content p {
@@ -52,6 +54,30 @@
 .item input:checked ~ .item-content {
     max-height: 50.25em;
     border-bottom: 4px solid gainsboro;
+    background-color: rgba(252,230,127,.1);
+    
 }
+
+.item input:checked ~ label {
+    letter-spacing: 0px;
+    color:deepskyblue;
+    font-size: 1.1em;
+}
+
+.rotate {
+    -moz-transition: all 100ms linear;
+    -webkit-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+
+.item input:checked ~ label i {
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+
+
 
 

@@ -15,11 +15,11 @@
 <div class="container">
 
 <div class="products">
-   
+<h1>Sales Material</h1>  
 <div class="item-group">
     <div class="item">
         <input id="item-one" type="radio" name="items">
-        <label for="item-one">SME Series - Building A Culture of Health Booklet</label>
+        <label for="item-one"><i class="fa fa-caret-right rotate"></i>&nbsp;&nbsp;SME Series - Building A Culture of Health Booklet</label>
         <div class="item-content">
             <div class="item-m"><img src="img/thumb10steps.jpg" alt=""/></div>
             <div class="item-action">
@@ -49,7 +49,7 @@
 <div class="item-group">
     <div class="item">
         <input id="item-two" type="radio" name="items">
-        <label for="item-two">SME Series - Building A Culture of Health Booklet</label>
+        <label for="item-two"><i class="fa fa-caret-right rotate"></i>&nbsp;&nbsp;Science of Health Booklet</label>
         <div class="item-content">
             <div class="item-m"><img src="img/thumb10steps.jpg" alt=""/></div>
             <div class="item-action">
@@ -80,6 +80,9 @@
 		
 		
 <div class="invoice">
+   
+   <h1>Order Information</h1>
+   
     <div class="invoice-wrap">
         <div class="hdr-cp-label-field">
             <div class="hdr-invoice-cp"><p>Channel Partner</p></div>
@@ -171,9 +174,9 @@
     </div><!--Invoice Wrap-->
     
         <div class="invoice-totals">
-            <div class="invoice-total-shipping">Shipping Total: $872.95 / 80 pc</div>
-            <div class="invoice-sub-total">Sub-Total: $437.95</div>
-            <div class="invoice-grand-total">Order Total: $1,425.00</div>
+            <div class="invoice-total-shipping">Shipping: <sup>$</sup>225.00 / 80 pc</div>
+            <div class="invoice-sub-total">Sub-Total: <sup>$</sup>1,200.00</div>
+            <div class="invoice-grand-total">Order Total: <sup>$</sup>1,425.00</div>
         </div>
 <div class="invoice-shipping">
     <p class="ship-where-text">Where's this shipping?</p>
@@ -209,7 +212,7 @@
               
               <div class="row"><!--Shipping Address Continued-->
                   <div class="ship-detail-label">
-                      <label for="ship-address-cont">Address (Cont.)</label>
+                      <label for="ship-address-cont">Address <span style="font-size: .75em; font-style: italic;">(Cont.)</span></label>
                     </div>
                   <div class="ship-detail-input">
                       <input type="text" id="ship-address-cont">
@@ -236,7 +239,7 @@
                     </div>
                   <div class="row">
                       <div class="ship-detail-label">
-                          <label for="ship-state" >St</label>
+                          <label for="ship-state" >State</label>
                         </div>
                       <div class="ship-detail-input">
                           <input type="text" id="ship-state">
@@ -263,7 +266,7 @@
                     </div>
                   <div class="row">
                       <div class="ship-detail-label">
-                          <label for="ship-ext">Ext</label>
+                          <label for="ship-ext">Ext.</label>
                         </div>
                       <div class="ship-detail-input">
                           <input type="text" id="ship-ext">
@@ -287,6 +290,10 @@
                   <div class="ship-detail-input">
                       <textarea id="ship-memo" rows="4" cols="22"></textarea>
                     </div>
+              </div>
+              
+              <div class="row btn-order-now"><!--Place Order Button-->
+              <div class="item-order"><button class="btn-reflex" type="button" href="#">Place Order</button></div>
               </div>
           </div>
       </div><!--end ship details-->
